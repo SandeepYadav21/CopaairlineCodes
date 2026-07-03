@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns:sub="http://www.tibco.com/xmlns/adb/effa7fcd-8a4a-475f-a8f8-9d93e9802563077cf31f-b9c9-492d-a746-1ce21b75f08f_schema" xmlns:tns="http://www.tibco.com/xmlns/adb/effa7fcd-8a4a-475f-a8f8-9d93e9802563077cf31f-b9c9-492d-a746-1ce21b75f08f" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/adb/effa7fcd-8a4a-475f-a8f8-9d93e9802563077cf31f-b9c9-492d-a746-1ce21b75f08f" xmlns="http://www.w3.org/2001/XMLSchema">
+    <import namespace="http://www.tibco.com/xmlns/adb/effa7fcd-8a4a-475f-a8f8-9d93e9802563077cf31f-b9c9-492d-a746-1ce21b75f08f_schema" schemaLocation="ScheduleChangeExecutionsPoller_schema.xsd"/>
+    <element name="ActivityOutput" type="tns:ActivityOutput_Type"/>
+    <complexType name="ActivityOutput_Type">
+        <sequence>
+            <element minOccurs="0" name="body" type="tns:body_Type"/>
+        </sequence>
+    </complexType>
+    <complexType name="body_Type">
+        <choice>
+            <element maxOccurs="unbounded" minOccurs="0" name="P__ScheduleChangeExecutions" type="sub:P__ScheduleChangeExecutions_Type"/>
+        </choice>
+    </complexType>
+</schema>

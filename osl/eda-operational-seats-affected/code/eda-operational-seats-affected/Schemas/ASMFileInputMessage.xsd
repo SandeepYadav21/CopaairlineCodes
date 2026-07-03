@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/OSMFileInputMessage" elementFormDefault="qualified" targetNamespace="http://www.example.org/OSMFileInputMessage">
+          
+  
+  
+  <element name="InputElement" type="tns:InputElementType"/>
+          
+  
+  
+  <complexType name="InputElementType">
+                	
+    
+    
+    <sequence>
+                      		
+      
+      
+      <element maxOccurs="1" minOccurs="0" name="Line1" type="string"/>
+                      		
+      
+                		
+          	
+    
+    
+    </sequence>
+                
+  
+  
+  </complexType>
+      
+
+
+</schema>

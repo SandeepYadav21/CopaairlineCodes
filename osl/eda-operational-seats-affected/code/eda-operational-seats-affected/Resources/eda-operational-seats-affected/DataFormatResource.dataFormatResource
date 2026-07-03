@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OSMFileInputMessage="http://www.example.org/OSMFileInputMessage" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_7eS5EREkEfCnzbS6KeKfBg" name="eda-operational-seats-affected.DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_WELrMBEoEfCnzbS6KeKfBg" importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/OSMFileInputMessage"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_7efGUBEkEfCnzbS6KeKfBg" formatType="Delimiter separated" colSeparatorParseRule="Treat all characters as entered as a single column separator string" fillCharacter="Space" schemaElementQName="OSMFileInputMessage:InputElement" lineLength="1" fieldOffsetsStr="Line1(0,0)">
+    <substitutionBindings xmi:id="_uja4sBOCEfCnzbS6KeKfBg" template="lineSeparator" propName="delimiter"/>
+    <substitutionBindings xmi:id="_A64MoBONEfCnzbS6KeKfBg" template="colSeparator" propName="columnsep"/>
+    <fieldOffsets xmi:id="_nTi3ECF3EfC2EOwk8j9b0A" name="Line1"/>
+  </jndi:configuration>
+</jndi:namedResource>

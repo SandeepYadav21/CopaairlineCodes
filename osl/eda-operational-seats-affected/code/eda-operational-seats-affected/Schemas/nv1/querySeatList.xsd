@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/querySeatList" xmlns:tns="http://www.example.org/querySeatList" elementFormDefault="qualified">
+	<element name="flightSeatList">
+		<complexType>
+			<sequence>
+				<element name="FlightNumber" type="string"  minOccurs="0" maxOccurs="1"/>
+				<element name="FlightDate" type="string"  minOccurs="0" maxOccurs="1"/>
+				<element name="FlightOrg" type="string"  minOccurs="0" maxOccurs="1"/>
+				<element name="FlightDest" type="string"  minOccurs="0" maxOccurs="1"/>
+				<element name="pnrDetails" minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="PNR" type="string"  minOccurs="0" maxOccurs="1"/>
+							<element name="SeatDetails" minOccurs="0" maxOccurs="unbounded">
+								<complexType>
+									<sequence>
+										<element name="SeatNo" type="string" minOccurs="0" maxOccurs="1"/>
+										<element name="PassengerName" type="string" minOccurs="0" maxOccurs="1"/>
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

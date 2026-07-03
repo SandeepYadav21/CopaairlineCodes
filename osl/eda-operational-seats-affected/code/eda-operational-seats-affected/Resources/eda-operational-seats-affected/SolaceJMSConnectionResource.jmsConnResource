@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_eImFEeRbEe-fEaduotmBIw" name="eda-operational-seats-affected.SolaceJMSConnectionResource" type="jms:JMSConnectionFactory">
+  <jndi:reference xmi:id="_eIohUORbEe-fEaduotmBIw" key="jndiConnectionJNDIName" type="jms:JNDIConnection" value="eda-operational-seats-affected.SolJNDI"/>
+  <jndi:configuration xsi:type="jms:JNDIConnectionFactory" xmi:id="_eIohUeRbEe-fEaduotmBIw" factoryType="Queue/Topic">
+    <substitutionBindings xmi:id="_7OJr0A7VEfCK9txVGarUyg" template="jndiName" propName="/Connections/Solace/JNDI"/>
+    <substitutionBindings xmi:id="_91VwgA7VEfCK9txVGarUyg" template="topicFactoryJNDIName" propName="/Connections/Solace/JNDI"/>
+  </jndi:configuration>
+</jndi:namedResource>

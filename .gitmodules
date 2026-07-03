@@ -1,0 +1,4 @@
+[submodule "eda-osl-common-module"]
+	path = eda-osl-common-module
+	url = https://copavsts.visualstudio.com/OmniChannelServices/_git/eda-osl-common-module
+	branch = feature/v8

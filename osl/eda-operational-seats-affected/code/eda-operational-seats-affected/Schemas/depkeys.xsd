@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/depkeys" xmlns:tns="http://www.example.org/depkeys" elementFormDefault="qualified">
+
+    <element name="depkeyElement" type="tns:depkeyElementType"></element>
+    
+    <complexType name="depkeyElementType">
+    	<sequence>
+    		<element name="depkeys" type="tns:depkeysType" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="depkeysType">
+    	<sequence>
+    		<element name="depkey" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+</schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/currentFlightDetails" xmlns:tns="http://www.example.org/currentFlightDetails" elementFormDefault="qualified">
+<element name="currentFlight">
+<complexType>
+<sequence>
+<element name="FlightKey" type="string" minOccurs="0" maxOccurs="1"></element>
+<element name="FlightNumber" type="string" minOccurs="0" maxOccurs="1"></element>
+<element name="FlightDate" type="string" minOccurs="0" maxOccurs="1"></element>
+<element name="ORG_CD" type="string" minOccurs="0" maxOccurs="1"></element>
+<element name="DEST_CD" type="string" minOccurs="0" maxOccurs="1"></element>
+<element name="EQ_CD" type="string" minOccurs="0" maxOccurs="1"></element>
+</sequence>
+</complexType>
+</element>
+
+</schema>

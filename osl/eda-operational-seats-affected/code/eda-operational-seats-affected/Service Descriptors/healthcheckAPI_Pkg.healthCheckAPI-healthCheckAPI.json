@@ -1,0 +1,29 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "healthCheckAPI",
+    "description" : "healthCheckAPI service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/healthcheck" : {
+      "get" : {
+        "summary" : "getHealthCheckAPI",
+        "description" : "getHealthCheckAPI",
+        "operationId" : "get-healthcheckapi",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

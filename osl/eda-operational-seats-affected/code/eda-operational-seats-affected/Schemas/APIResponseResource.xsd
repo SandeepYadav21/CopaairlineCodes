@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1738090578422" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1738090578422">
+  <complexType name="APIResponseElementType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="ResponseElement">
+        <complexType>
+          <sequence>
+          	<element maxOccurs="1" minOccurs="0" name="pnr"
+          		type="string" />
+          	<element maxOccurs="1" minOccurs="0" name="passengerName"
+          		type="string" />
+          	<element name="cityIdxNumber" type="string" minOccurs="0"
+          		maxOccurs="1">
+          	</element>
+          	<element name="totalSeats" type="string" minOccurs="0"
+          		maxOccurs="1">
+          	</element>
+          	<element maxOccurs="1" minOccurs="0"
+          		name="compartmentClassCd" type="string" />
+          	<element name="seatType" type="string" minOccurs="0"
+          		maxOccurs="1">
+          	</element>
+          	<element maxOccurs="1" minOccurs="0" name="seatNumber"
+          		type="string" />
+          	<element name="boardingZone" type="string" minOccurs="0" maxOccurs="1"></element>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="APIResponseElement" type="tns:APIResponseElementType"/>
+</schema>

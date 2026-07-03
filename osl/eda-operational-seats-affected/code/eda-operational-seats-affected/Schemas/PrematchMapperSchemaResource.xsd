@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1739354663750" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1739354663750">
+  <complexType name="PrematchMapperSchemaElementType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="PremismtachResponseElement">
+        <complexType>
+          <sequence>
+          	<element maxOccurs="unbounded" minOccurs="0"
+          		name="seatInfo" type="tns:seatInfoType" />
+          	<element maxOccurs="1" minOccurs="0" name="paxcnt"
+          		type="int" />
+          	<element maxOccurs="1" minOccurs="0" name="dep_dt"
+          		type="string" />
+          	<element name="recloc" type="string" minOccurs="0"
+          		maxOccurs="1">
+          	</element>
+          	<element name="fltnum" type="string" minOccurs="0"
+          		maxOccurs="1">
+          	</element>
+          	<element name="origcd" type="string" minOccurs="0"></element>
+          	<element name="destcd" type="string" minOccurs="0"></element>
+          	<element name="carriercd" type="string" minOccurs="0"></element>
+          	<element name="seatseq" type="int" minOccurs="0" maxOccurs="1"></element>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="PrematchMapperSchemaElement" type="tns:PrematchMapperSchemaElementType"/>
+
+  <complexType name="seatInfoType">
+  	<sequence>
+  		<element name="seat_num" type="string" maxOccurs="1"></element>
+  		<element name="firstname" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="lastname" type="string" minOccurs="0" maxOccurs="1"></element>
+  	</sequence>
+  </complexType>
+</schema>

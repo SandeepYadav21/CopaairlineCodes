@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Logging" xmlns:tns="http://www.example.org/Logging" elementFormDefault="qualified">
+<element name="root">
+    <complexType>
+      <sequence>
+        <element maxOccurs="1" minOccurs="0" name="ID" type="string"/>
+        <element maxOccurs="1" minOccurs="0" name="TableName" type="string"/>
+                <element minOccurs="0" name="LogMessage" type="string"/>
+                <element maxOccurs="1" minOccurs="0" name="LogRequestMessage" type="string"/>
+                <element minOccurs="0" name="LogResponseMessage" type="string"/>
+                <element minOccurs="0" name="StatusType" type="string"/>
+                <element minOccurs="0" name="ProcessName" type="string"/>
+                <element minOccurs="0" name="CLEFID" type="string"/>
+                <element minOccurs="0" name="LogType" type="string"/>
+                <element minOccurs="0" name="RespTime" type="string"/>
+                <element minOccurs="0" name="CreateDateTime" type="dateTime"/>
+				<element minOccurs="0" name="UpdateDateTime" type="dateTime"/>
+                <element minOccurs="0" name="Header" type="string"/>
+                <element minOccurs="0" name="URI" type="string"/>
+                <element minOccurs="0" name="IsXML" type="string"/>
+                			<element maxOccurs="1" minOccurs="0" name="Copa_Channel_ID" type="string" default="null"/>
+    						<element maxOccurs="1" minOccurs="0" name="Copa_Consumer_ID" type="string" default="null"/>
+    						<element maxOccurs="1" minOccurs="0" name="Copa_Transaction_ID" type="string" default="null"/>
+    						<element maxOccurs="1" minOccurs="0" name="Copa_Authorization_Token" type="string" default="null"/>
+            </sequence>
+    </complexType>
+  </element>
+    <element name="ReqDtls">
+    <complexType>
+      <sequence>
+      	<element maxOccurs="1" minOccurs="0" name="timestamp"
+      		type="integer" />
+      	<element maxOccurs="1" minOccurs="0" name="DateTime"
+      		type="dateTime" />
+      	<element name="ID" type="string" maxOccurs="1" minOccurs="0"></element>
+      </sequence>
+    </complexType>
+  </element>
+  
+      <element name="ErrorMessage">
+    <complexType >
+        <sequence>
+        	<element minOccurs="0" name="Code" type="string" />
+        	<element minOccurs="0" name="Description" type="string" />
+        	<element minOccurs="0" name="CLEFID" type="string" />
+        	<element minOccurs="0" name="TableName" type="string" />
+        	<element name="CreateDateTime" type="dateTime" minOccurs="0" maxOccurs="1"></element>
+        </sequence>
+    </complexType>
+    </element>
+</schema>

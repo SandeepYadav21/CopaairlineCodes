@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/OrigSeatVariable" xmlns:tns="http://www.example.org/OrigSeatVariable" elementFormDefault="qualified">
+
+    <element name="OrigSeatVar" type="tns:OrigSeatVarType"></element>
+
+    <complexType name="OrigSeatVarType">
+    	<sequence>
+    		<element name="OrigSeat" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+</schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns:tns="http://www.tibco.com/xmlns/adb/effa7fcd-8a4a-475f-a8f8-9d93e9802563077cf31f-b9c9-492d-a746-1ce21b75f08f_schema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/adb/effa7fcd-8a4a-475f-a8f8-9d93e9802563077cf31f-b9c9-492d-a746-1ce21b75f08f_schema" xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="P__ScheduleChangeExecutions" type="tns:P__ScheduleChangeExecutions_Type"/>
+    <complexType name="P__ScheduleChangeExecutions_Type">
+        <all>
+            <element minOccurs="0" name="ExecutionGuid" nillable="true" type="string"/>
+            <element minOccurs="0" name="UserNameExecution" nillable="true" type="string"/>
+            <element minOccurs="0" name="Comments" nillable="true" type="string"/>
+            <element minOccurs="0" name="ExecutionDate" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__OPCODE" nillable="true" type="int"/>
+            <element minOccurs="0" name="ADB__SEQUENCE" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__TIMESTAMP" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__REF__OBJECT" nillable="true" type="string"/>
+        </all>
+    </complexType>
+</schema>

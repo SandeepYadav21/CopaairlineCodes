@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1737713159385" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1737713159385">
+  <complexType name="SeatComparisionElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="ResponseElement">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="SEAT_SEQ" type="integer"/>
+            <element maxOccurs="1" minOccurs="0" name="FLT_NUM" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="RECLOC" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="SEAT_NUM" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="PAX_CNT" type="integer"/>
+            <element maxOccurs="1" minOccurs="0" name="DEP_KEY" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="DEP_DT" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="SeatComparisionElement" type="tns:SeatComparisionElementType"/>
+</schema>

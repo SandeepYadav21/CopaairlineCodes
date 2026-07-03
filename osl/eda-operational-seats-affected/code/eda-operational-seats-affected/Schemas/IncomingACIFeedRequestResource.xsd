@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1747129881660" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1747129881660">
+  <complexType name="IncomingACIFeedRequestElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="root">
+        <complexType>
+          <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="flightList">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="airlineCode" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="flightNumber" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="flightDate" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="shipChanges" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="totalLegs" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="termCityCode" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="codeShareFlightNumber" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="lastSeqNumber" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="flightControlInd" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="aciTimestamp" type="dateTime"/>
+                  <element maxOccurs="unbounded" minOccurs="0" name="legList">
+                    <complexType>
+                      <sequence>
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="cityIndex" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="cityCode" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="legIndicator" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="dateAdjusted" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="shipChangeNumber" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="equipmentCode" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="tailNumber" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="departureGate" type="string" />
+                      	<element name="arrivalGate" type="string" minOccurs="0" maxOccurs="1"></element>
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="etdTime" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="etdDate" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="stdDepTime" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="stdDepDate" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="boardingTime" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="boardingDate" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="boardingTimeAdj" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="boardingTimeChangeFactor" type="string" />
+                      	<element maxOccurs="1" minOccurs="0"
+                      		name="totalCompartments" type="string" />
+                      	<element maxOccurs="unbounded" minOccurs="0"
+                      		name="compartmentList">
+                      		<complexType>
+                      			<sequence>
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="compartmentCode"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="totalSeats"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="totalUsableSeats"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="seatsLessHeld"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="seatsLessHeldStandby"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="totalAssignableSeats"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="totalChildren"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="totalInfants"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="totalBagsChecked"
+                      					type="string" />
+                      				<element maxOccurs="1"
+                      					minOccurs="0" name="bagWeightLimits"
+                      					type="string" />
+                      			</sequence>
+                      		</complexType>
+                      	</element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="paxlist">
+              <complexType>
+                <sequence>
+                	<element maxOccurs="1" minOccurs="0"
+                		name="recordLocator" type="string" />
+                	<element maxOccurs="1" minOccurs="0"
+                		name="numberInParty" type="string" />
+                	<element maxOccurs="1" minOccurs="0"
+                		name="nameItemsSurname" type="string" />
+                	<element maxOccurs="1" minOccurs="0"
+                		name="passengerName" type="string" />
+                	<element maxOccurs="1" minOccurs="0"
+                		name="passengerIndicator" type="string" />
+                	<element maxOccurs="1" minOccurs="0"
+                		name="passengerType" type="string" />
+                	<element name="passengerStandbyCdLength" type="string" minOccurs="0" maxOccurs="1"></element>
+                	<element maxOccurs="1" minOccurs="0"
+                		name="passengerIdNumber" type="string" />
+                	<element maxOccurs="unbounded" minOccurs="0"
+                		name="paxflight">
+                		<complexType>
+                			<sequence>
+                				<element maxOccurs="1" minOccurs="0"
+                					name="airlineCode" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="flightNumber" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="flightDate" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="passengerIdNumber" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="boardCityIdxNum" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="seatsUnassigned" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="serviceClass" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="passengerInd" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="passengerInd2" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="splPassengerInd" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="thruCityIndex" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="finalDestinationInd" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="originalClassBooked" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="compartmentFlown" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="gradeChangeClass" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="transferToServiceClass" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="transferToFlightNumber" type="string" />
+                				<element name="transferToFlightDate"
+                					type="string" minOccurs="0" maxOccurs="1">
+                				</element>
+                				<element
+                					name="transferToFlightAirlineCd" type="string"
+                					minOccurs="0" maxOccurs="1">
+                				</element>
+                				<element name="transferToFlightCityCd"
+                					type="string" minOccurs="0" maxOccurs="1">
+                				</element>
+                				<element maxOccurs="1" minOccurs="0"
+                					name="transferFromFlightNumber" type="string" />
+                				<element name="transferFromFlightDate"
+                					type="string" minOccurs="0" maxOccurs="1">
+                				</element>
+                				<element
+                					name="transferFromFlightAirlineCd" type="string"
+                					minOccurs="0" maxOccurs="1">
+                				</element>
+                				<element name="transferFromFlightCityCd"
+                					type="string" minOccurs="0" maxOccurs="1">
+                				</element>
+                				<element maxOccurs="1" minOccurs="0"
+                					name="alternateFlightNumber" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="consolidatedFlightNumber" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="standbyOrdinalNumber" type="string" />
+                				<element maxOccurs="1" minOccurs="0"
+                					name="pax_attributes">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="apiComplete" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="isCheckedIn" type="string" />
+                						</sequence>
+                					</complexType>
+                				</element>
+                				<element maxOccurs="unbounded"
+                					minOccurs="0" name="seat_list">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="cityIdxNumber"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="totalSeats" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="compartmentClassCd"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="seatType" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="seatNumber" type="string" />
+                							<element name="boardingZone"
+                								type="string" minOccurs="0" maxOccurs="1">
+                							</element>
+                						</sequence>
+                					</complexType>
+                				</element>
+                				<element name="fqtv_list"
+                					type="tns:fqtv_listType" minOccurs="0"
+                					maxOccurs="unbounded">
+                				</element>
+                				<element maxOccurs="unbounded"
+                					minOccurs="0" name="bag_list">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="bagIndicator" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="bagCount" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="bagWeight" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="carryBagCount"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="carryBagWeight"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="bagTagRange" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="bagTagNumber" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="totalBagsInRange"
+                								type="string" />
+                							<element
+                								name="bagDestinationCity" type="string"
+                								minOccurs="0" maxOccurs="1">
+                							</element>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="bagSpareInd1" type="string" />
+                						</sequence>
+                					</complexType>
+                				</element>
+                				<element name="prd_list"
+                					type="tns:prd_listType" minOccurs="0"
+                					maxOccurs="unbounded">
+                				</element>
+                				<element maxOccurs="unbounded"
+                					minOccurs="0" name="seq_nbr_list">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="sequenceNumber"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="passengerBoarded"
+                								type="string" />
+                						</sequence>
+                					</complexType>
+                				</element>
+                				<element maxOccurs="unbounded"
+                					minOccurs="0" name="sec_prof_list">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="securityNameInitial"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="securityCategory"
+                								type="string" />
+                						</sequence>
+                					</complexType>
+                				</element>
+                				<element name="tci_list"
+                					type="tns:tci_listType" minOccurs="0" maxOccurs="unbounded">
+                				</element>
+                				<element maxOccurs="unbounded"
+                					minOccurs="0" name="misc_list">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="miscIndicator"
+                								type="string" />
+                						</sequence>
+                					</complexType>
+                				</element>
+                				<element name="codeshr_list"
+                					type="tns:codeshr_listType" minOccurs="0"
+                					maxOccurs="unbounded">
+                				</element>
+                				<element name="fqtv_tier_list"
+                					type="tns:fqtv_tier_listType" minOccurs="0"
+                					maxOccurs="unbounded">
+                				</element>
+                				<element maxOccurs="unbounded"
+                					minOccurs="0" name="hist_list">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="agentCityAAA" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="agentInitials"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="agentDutyCode"
+                								type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="interchangeTerminal"
+                								type="string" />
+                						</sequence>
+                					</complexType>
+                				</element>
+                				<element maxOccurs="unbounded"
+                					minOccurs="0" name="trans_times_list">
+                					<complexType>
+                						<sequence>
+                							<element maxOccurs="1"
+                								minOccurs="0" name="checkInTime" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="checkInDate" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="transferTime" type="string" />
+                							<element maxOccurs="1"
+                								minOccurs="0" name="transferDate" type="string" />
+                						</sequence>
+                					</complexType>
+                				</element>
+                			</sequence>
+                		</complexType>
+                	</element>
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="IncomingACIFeedRequestElement" type="tns:IncomingACIFeedRequestElementType"/>
+
+  <complexType name="fqtv_listType">
+  	<sequence>
+  		<element name="fqtvSurnameNumber" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="fqtvNameInitNumber" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="fqtvIndicator" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="fqtvNumber" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="otherAirlineCd" type="string" minOccurs="0" maxOccurs="1"></element>
+  	</sequence>
+  </complexType>
+
+  <complexType name="fqtv_tier_listType">
+  	<sequence>
+  		<element name="paxInitial" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="tierLevel" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="customerLevel" type="string" minOccurs="0" maxOccurs="1"></element>
+  	</sequence>
+  </complexType>
+
+  <complexType name="codeshr_listType">
+  	<sequence>
+  		<element name="OACarrierCode" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="OAFlightNumber" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="OAServiceClass" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="OAPNR" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="OACodeShareInd" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  	</sequence>
+  </complexType>
+
+  <complexType name="prd_listType">
+  	<sequence>
+  		<element name="flightLinkNumber" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="paxLinkNumber" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="prdIndicator" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="adultCount" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="adultWeight" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="maleCount" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="maleWeight" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="femaleCount" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="femaleWeight" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="childCount" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="childWeight" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="infantCount" type="string" minOccurs="0" maxOccurs="1"></element>
+  	</sequence>
+  </complexType>
+
+  <complexType name="tci_listType">
+  	<sequence>
+  		<element name="tciIndicator" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="otherAirlineFlightURP" type="string"
+  			minOccurs="0" maxOccurs="1">
+  		</element>
+  		<element name="otherAirlineSeatNumber" type="string"
+  			minOccurs="0" maxOccurs="1">
+  		</element>
+  		<element name="otherAirlineBagDest" type="string"
+  			minOccurs="0" maxOccurs="1">
+  		</element>
+  		<element name="outboundAirlineCd" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="outboundDepartureCity" type="string"
+  			minOccurs="0" maxOccurs="1">
+  		</element>
+  		<element name="outboundArrivalCity" type="string"
+  			minOccurs="0" maxOccurs="1">
+  		</element>
+  		<element name="outboundFlightNumber" type="string"
+  			minOccurs="0" maxOccurs="1">
+  		</element>
+  		<element name="dateLocale" type="string" minOccurs="0"
+  			maxOccurs="1">
+  		</element>
+  		<element name="timeLocale" type="string" minOccurs="0" maxOccurs="1"></element>
+  		<element name="paxSequenceNumber" type="string" minOccurs="0" maxOccurs="1"></element>
+  	</sequence>
+  </complexType>
+</schema>

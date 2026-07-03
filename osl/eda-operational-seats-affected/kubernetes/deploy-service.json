@@ -1,0 +1,31 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+      "name": "eda-operational-seats-affected-1-0-svc",
+      "labels": {
+        "k8s-app": "eda-operational-seats-affected-1-0"
+      }
+    },
+    "spec": {
+      "ports": [
+        {
+          "name": "schedule-port",
+          "protocol": "TCP",
+          "port": 8080,
+          "targetPort": 8087
+        },
+        {
+        "name": "healthcheck-port",
+        "protocol": "TCP",
+        "port": 8087,
+        "targetPort": 8087
+      }
+      ],
+      "selector": {
+        "k8s-app": "eda-operational-seats-affected-1-0"
+      },
+      "type": "ClusterIP",
+      "sessionAffinity": "None"
+    }
+  }
