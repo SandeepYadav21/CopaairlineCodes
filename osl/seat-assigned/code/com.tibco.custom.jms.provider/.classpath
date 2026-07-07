@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/geronimo-jms_2.0_spec-1.0-alpha-2.jar"/>
+	<classpathentry kind="lib" path="lib/org.apache.servicemix.bundles.jzlib-1.0.7_2.jar"/>
+	<classpathentry kind="lib" path="lib/org.osgi.annotation-6.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/sol-common-10.22.0.jar"/>
+	<classpathentry kind="lib" path="lib/sol-jcsmp-10.22.0.jar"/>
+	<classpathentry kind="lib" path="lib/sol-jms-10.22.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="lib/netty-all-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-buffer-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-dns-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-haproxy-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-http-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-http2-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-memcache-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-mqtt-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-redis-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-smtp-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-socks-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-stomp-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-codec-xml-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-common-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-handler-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-handler-proxy-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-handler-ssl-ocsp-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-resolver-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-resolver-dns-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-resolver-dns-classes-macos-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-resolver-dns-native-macos-4.1.105.Final-osx-aarch_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-resolver-dns-native-macos-4.1.105.Final-osx-x86_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-classes-epoll-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-classes-kqueue-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-native-epoll-4.1.105.Final-linux-aarch_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-native-epoll-4.1.105.Final-linux-riscv64.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-native-epoll-4.1.105.Final-linux-x86_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-native-kqueue-4.1.105.Final-osx-aarch_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-native-kqueue-4.1.105.Final-osx-x86_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-native-unix-common-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-rxtx-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-sctp-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/netty-transport-udt-4.1.105.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/sol-common-10.23.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/sol-jcsmp-10.23.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/sol-jms-10.23.0-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/sol-jms-10.23.0.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_m2kXAWEjEe-vMcGOkWKbEQ" name="seat-assigned.SolJNDI" type="jms:JNDIConnection">
+  <jndi:configuration xsi:type="jms:JNDIConnectionConfiguration" xmi:id="_m2kXAmEjEe-vMcGOkWKbEQ" initialContextFactory="com.solacesystems.jndi.SolJNDIInitialContextFactory">
+    <substitutionBindings xmi:id="_nmYqYGEjEe-vMcGOkWKbEQ" template="providerUrl" propName="//eda-common-module///Connection/Solace/Host"/>
+    <userCredentials xmi:id="_2AHwEGEjEe-vMcGOkWKbEQ" username="default" password="#!FZyxkZSDkLUm5ZnS4xThhF0FtKtJjcDK"/>
+    <propertyConfiguration xmi:id="_phwK4GEjEe-vMcGOkWKbEQ" name="java.naming.security.principal" type="string">
+      <substitutionBindings xmi:id="_tkVPgGEjEe-vMcGOkWKbEQ" template="value" propName="//eda-common-module///Connection/Solace/Username"/>
+    </propertyConfiguration>
+    <propertyConfiguration xmi:id="_plai4GEjEe-vMcGOkWKbEQ" name="java.naming.security.credentials" type="string" value="">
+      <substitutionBindings xmi:id="_w0zhwGEjEe-vMcGOkWKbEQ" template="value" propName="//eda-common-module///Connection/Solace/Password"/>
+    </propertyConfiguration>
+    <propertyConfiguration xmi:id="_ppBQgGEjEe-vMcGOkWKbEQ" name="Solace_JMS_VPN" type="string" value="">
+      <substitutionBindings xmi:id="_z-3qAGEjEe-vMcGOkWKbEQ" template="value" propName="//eda-common-module///Connection/Solace/vpnName"/>
+    </propertyConfiguration>
+  </jndi:configuration>
+</jndi:namedResource>

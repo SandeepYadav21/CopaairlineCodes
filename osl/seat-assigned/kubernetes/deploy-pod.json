@@ -1,0 +1,176 @@
+{
+	"kind": "Deployment",
+	"apiVersion": "apps/v1",
+	"metadata": {
+		"name": "seat-assigned-1-0",
+		"annotations": {
+			"kubernetes.io/change-cause": "image updated to RELEASENUMBER"
+		},
+		"labels": {
+			"k8s-app": "seat-assigned-1-0",
+			"app": "bwce"
+		}
+	},
+	"spec": {
+		"replicas": 1,
+		"revisionHistoryLimit": 5,
+		"selector": {
+			"matchLabels": {
+				"k8s-app": "seat-assigned-1-0"
+			}
+		},
+		"template": {
+			"metadata": {
+				"name": "seat-assigned-1-0",
+				"creationTimestamp": null,
+				"labels": {
+					"k8s-app": "seat-assigned-1-0",
+					"app": "bwce"
+				}
+			},
+			"spec": {
+				"topologySpreadConstraints": [
+					{
+						"maxSkew": 1,
+						"topologyKey": "kubernetes.io/hostname",
+						"whenUnsatisfiable": "ScheduleAnyway",
+						"labelSelector": {
+							"matchLabels": {
+								"k8s-app": "seat-assigned-1-0"
+							}
+						}
+					}
+				],
+				"affinity": {
+					"nodeAffinity": {
+						"requiredDuringSchedulingIgnoredDuringExecution": {
+							"nodeSelectorTerms": [
+								{
+									"matchExpressions": [
+										{
+											"key": "hardware",
+											"operator": "In",
+											"values": [
+												"edaosl"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"containers": [
+					{
+						"name": "seat-assigned-1-0",
+						"image": "azracroslprocesproe1001.azurecr.io/osl/seat-assigned:latest",
+						"env": [
+							{
+								"name": "BW_PROFILE",
+								"value": "docker"
+							},							
+							{
+								"name": "APP_CONFIG_PROFILE",
+								"value": "docker"
+							},
+							{
+								"name": "AZURE_VAULT",
+								"value": "true"
+							},
+							{
+								"name": "AZURE_MI_API_VERSION",
+								"value": "2018-02-01"
+							},
+							{
+								"name": "BUILD_ID",
+								"value": "latest"
+							},
+							{
+								"name": "SERVICE_NAME",
+								"value": "seat-assigned"
+							},
+								{
+                                 "name": "eda-common-module.Connection.Solace.Password",
+                                 "valueFrom": {
+                                 "secretKeyRef": {
+                                 "name": "eda-solace-pass",
+                                 "key": "password"
+                                                 }
+								 }},
+								 {
+                                 "name": "eda-common-module.Connection.Solace.sslTrustStorePassword",
+                                 "valueFrom": {
+                                 "secretKeyRef": {
+                                 "name": "sslpassword",
+                                 "key": "password"
+                                                 }
+								 }}
+						],
+						
+						"envFrom": [
+							{
+								"configMapRef": {
+									"name": "edabwcommonmodule"
+								}
+							},							
+							{
+								"configMapRef": {
+									"name": "eda-seatassigned"
+								}
+							}
+						],
+						"volumeMounts": [
+							{"mountPath": "/edaconfig",
+								"name": "eda-certs-volume"
+							}
+							],	
+						"resources": {
+							"requests": {
+								"cpu": 0.1,
+								"memory": 1
+							}
+						},
+						"livenessProbe": {
+							"httpGet": {
+								"path": "/_ping",
+								"port": 7777
+							},
+							"initialDelaySeconds": 180,
+							"periodSeconds": 10,
+							"timeoutSeconds": 10
+						},
+						"readinessProbe": {
+							"httpGet": {
+								"path": "/_ping",
+								"port": 7777
+							},
+							"initialDelaySeconds": 180,
+							"periodSeconds": 10,
+							"timeoutSeconds": 10
+						},
+						"securityContext": {
+							"privileged": false
+						},
+						"ports": [
+							{
+								"containerPort": 8080
+							},
+							{
+								"containerPort": 7777
+							}
+						]
+					}
+				],
+				"volumes": [
+					{
+						"name": "eda-certs-volume",
+						"persistentVolumeClaim": {
+							"claimName": "eda-certs-volume-pvc",
+							"readOnly": false
+						}
+					}
+				]
+			}
+		}
+	}
+}

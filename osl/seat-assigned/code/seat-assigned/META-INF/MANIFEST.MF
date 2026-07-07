@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Seat-assigned Module
+Bundle-SymbolicName: seat-assigned
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: TIBCO Software Inc.
+Require-Bundle: eda-common-module;bundle-version="1.0.0"
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.module; filter:="(&(name=eda-common-module)(version=1.0.0))",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.palette; filter:="(name=bw.jdbc)",
+ com.tibco.bw.palette; filter:="(name=bw.restjson)",
+ com.tibco.bw.palette; filter:="(name=bw.java)",
+ com.tibco.bw.palette; filter:="(name=bw.jms)",
+ com.tibco.bw.palette; filter:="(name=bw.xml)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.jdbc)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.jmsconnection)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.jndiconfiguration)"
+TIBCO-BW-Version: 2.9.1 V52 2024-02-14
+TIBCO-BW-Edition: bwcf
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
