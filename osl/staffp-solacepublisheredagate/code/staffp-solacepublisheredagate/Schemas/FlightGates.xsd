@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/FlightGates" xmlns:tns="http://www.example.org/FlightGates" elementFormDefault="qualified">
+
+    <element name="FlightGate">
+    	<complexType>
+    		<sequence>
+    			<element name="id" type="string"></element>
+    			<element name="eventTime" type="string"></element>
+    			<element name="dataVersion" type="string"></element>
+    			<element name="eventType" type="string"></element>
+    			<element name="topic" type="string"></element>
+    			<element name="eventIdentifier" maxOccurs="1" minOccurs="0">
+    				<complexType>
+    					<sequence>
+    						<element name="flightID" type="string"></element>
+    						<element name="flightDate" type="string"></element>
+    						<element name="departure" type="string"></element>
+    						<element name="arrival" type="string"></element>
+    					</sequence>
+    				</complexType></element>
+    			<element name="data" maxOccurs="1" minOccurs="0">
+    				<complexType>
+    					<sequence>
+    						<element name="Gates" maxOccurs="1" minOccurs="0">
+    							<complexType>
+    								<sequence>
+    									<element name="ArrivalTerminal"
+    										type="string" maxOccurs="1" minOccurs="0">
+    									</element>
+    									<element name="ArrivalGate"
+    										type="string" maxOccurs="1" minOccurs="0">
+    									</element>
+    									<element name="DepartureTerminal"
+    										type="string" maxOccurs="1" minOccurs="0">
+    									</element>
+    									<element name="DepartureGate"
+    										type="string" maxOccurs="1" minOccurs="0">
+    									</element>
+    								</sequence>
+    							</complexType></element>
+    					</sequence>
+    				</complexType></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>
