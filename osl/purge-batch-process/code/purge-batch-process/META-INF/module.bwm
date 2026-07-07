@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_46ssoD66Ee-2QbcBC9uoEQ" targetNamespace="http://tns.tibco.com/bw/composite/purge-batch-process" name="purge-batch-process" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_7XHrwD66Ee-2QbcBC9uoEQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7Xs6kD66Ee-2QbcBC9uoEQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7X5u4D66Ee-2QbcBC9uoEQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7YAckD66Ee-2QbcBC9uoEQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7YOfAD66Ee-2QbcBC9uoEQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7YUloD66Ee-2QbcBC9uoEQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_7YchcD66Ee-2QbcBC9uoEQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_6VxvYD--Ee-38cUcuBlVew" name="/Connection/TimeInterval" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_IXbuID7AEe-2QbcBC9uoEQ" name="/Connection/JDBC_MSSQL/DB_URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Sa1swD7AEe-2QbcBC9uoEQ" name="/Connection/JDBC_MSSQL/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SdSj0D7AEe-2QbcBC9uoEQ" name="/Connection/JDBC_MSSQL/schema" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SftlsD7AEe-2QbcBC9uoEQ" name="/Connection/JDBC_MSSQL/catalog" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Sjc2MD7AEe-2QbcBC9uoEQ" name="/Connection/JDBC_MSSQL/TimeInterval" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SoGssD7AEe-2QbcBC9uoEQ" name="/Connection/JDBC_MSSQL/password" type="property:password" scaext:simpleValue="#!mhw3WB0Jx8CFUJ7uY7jftw==" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_6CVDED66Ee-2QbcBC9uoEQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6CW4QD66Ee-2QbcBC9uoEQ" processName="purgeexpiredrecords.Process_purgeBoardingnow"/>
+  </sca:component>
+  <sca:component xmi:id="_QdFKED-FEe-Rme2P6M0-bA" name="ComponentProcess_purgePnrActives" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_QdFKET-FEe-Rme2P6M0-bA" processName="purgeexpiredrecords.Process_purgePnrActives"/>
+  </sca:component>
+  <sca:component xmi:id="_uZXI4D-LEe-Rme2P6M0-bA" name="ComponentProcess_purgePnrEvents" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_uZXI4T-LEe-Rme2P6M0-bA" processName="purgeexpiredrecords.Process_purgePnrEvents"/>
+  </sca:component>
+</sca:composite>

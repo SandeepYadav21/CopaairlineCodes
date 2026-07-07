@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_h9EBUT68Ee-2QbcBC9uoEQ" name="purgeexpiredrecords.MSSQL" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_h9hUUD68Ee-2QbcBC9uoEQ" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_h9hUUT68Ee-2QbcBC9uoEQ">
+    <substitutionBindings xmi:id="_8O5ZkD7AEe-2QbcBC9uoEQ" template="username" propName="/Connection/JDBC_MSSQL/username"/>
+    <substitutionBindings xmi:id="_FdYF4D7CEe-2QbcBC9uoEQ" template="password" propName="/Connection/JDBC_MSSQL/password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_h9k-sD68Ee-2QbcBC9uoEQ" jdbcDriver="com.microsoft.sqlserver.jdbc.SQLServerDriver">
+      <substitutionBindings xmi:id="_oTDWMD7AEe-2QbcBC9uoEQ" template="dbURL" propName="/Connection/JDBC_MSSQL/DB_URL"/>
+    </connectionConfig>
+    <connectionProperties xmi:id="_7pXgED6_Ee-2QbcBC9uoEQ" key="jarFile" value="mssql"/>
+  </jndi:configuration>
+</jndi:namedResource>
