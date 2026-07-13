@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_i7s3oORvEe-ZgZG28Cq-kg" targetNamespace="http://tns.tibco.com/bw/composite/staffp-solacepublishertoedaoooitimes" name="staffp-solacepublishertoedaoooitimes" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_lbGSQORvEe-ZgZG28Cq-kg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lbfT0ORvEe-ZgZG28Cq-kg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lbpE0ORvEe-ZgZG28Cq-kg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lbvLcORvEe-ZgZG28Cq-kg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lb3uUORvEe-ZgZG28Cq-kg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lcA4QORvEe-ZgZG28Cq-kg" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_lcLQUORvEe-ZgZG28Cq-kg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_rED3IOR1Ee-ZgZG28Cq-kg" name="Environment" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_THxdIOR1Ee-ZgZG28Cq-kg" name="/EMS/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VAX9gOR1Ee-ZgZG28Cq-kg" name="/EMS/UserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VCfdYOR1Ee-ZgZG28Cq-kg" name="/EMS/Password" type="property:password" scaext:simpleValue="#!PghFrS3vw2kgtS6B80J4fQ==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VEMGgOR1Ee-ZgZG28Cq-kg" name="/EMS/keystoreurl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VFfuEOR1Ee-ZgZG28Cq-kg" name="/EMS/keystorepassword" type="property:password" scaext:simpleValue="#!pGINBTKipBoTKSEuV61HkA==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rmJQgOR1Ee-ZgZG28Cq-kg" name="/EMS/EmsQueue" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TNEz4OR1Ee-ZgZG28Cq-kg" name="/Solace/URl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Vb5b4OR1Ee-ZgZG28Cq-kg" name="/Solace/UserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Vdun4OR1Ee-ZgZG28Cq-kg" name="/Solace/Password" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VfT8QOR1Ee-ZgZG28Cq-kg" name="/Solace/vpnName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VhPO4OR1Ee-ZgZG28Cq-kg" name="/Solace/sslValidateCertificate" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VisAYOR1Ee-ZgZG28Cq-kg" name="/Solace/sslValidateCertificateDate" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Vz2o4OR1Ee-ZgZG28Cq-kg" name="/Solace/sslTrustStore" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eYlDAOR1Ee-ZgZG28Cq-kg" name="/Solace/sslTrustStorePassword" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-32QALwkEfCLi_04ouh_sQ" name="/Azure/Token/hostname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Z5U1ILwsEfCLi_04ouh_sQ" name="/Azure/Token/uri" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aCyTILwsEfCLi_04ouh_sQ" name="/Azure/Token/apiVersion" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kjYkELwsEfCLi_04ouh_sQ" name="/Azure/Token/agentPoolClientID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_O47wMLw0EfCLi_04ouh_sQ" name="/Azure/Token/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Ay6OgLwlEfCLi_04ouh_sQ" name="/Azure/Secret/hostname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aoDjYLwsEfCLi_04ouh_sQ" name="/Azure/Secret/uri" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_asjo4LwsEfCLi_04ouh_sQ" name="/Azure/Secret/apiVersion" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Ih9AALw0EfCLi_04ouh_sQ" name="/Azure/Secret/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_j1u28ORvEe-ZgZG28Cq-kg" name="ComponentSolacePublisherToEDAOooitimes" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_j1u28eRvEe-ZgZG28Cq-kg" processName="staffp_solacepublishertoedaoooitimes.SolacePublisherToEDAOooitimes"/>
+  </sca:component>
+</sca:composite>

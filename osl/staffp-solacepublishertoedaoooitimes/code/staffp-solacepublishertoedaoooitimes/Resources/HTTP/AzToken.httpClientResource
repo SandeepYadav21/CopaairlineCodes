@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_4CZ_AbwgEfCLi_04ouh_sQ" name="HTTP.AzToken" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_4CZ_ArwgEfCLi_04ouh_sQ" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" hystrixCommandName="HTTP.AzToken" cmdExecutionIsolationStrategy="COUNT_BASED" cmdExecutionIsolationTimeout="10" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="50" cmdCircuitBreakerSleepWindow="100" cmdCircuitBreakerErrorThresholdPercentage="100" cmdMetricsRollingStatsTime="100" cmdMetricsRollingStatsNumBuckets="60000" cmdMetricsHealthSnapshotInterval="500" tpCoreSize="10" tpMaxQueueSize="60000" tpQueueSizeRejectionThreshold="6000" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_4CZ_A7wgEfCLi_04ouh_sQ">
+      <substitutionBindings xmi:id="_qU_KwLw2EfCLi_04ouh_sQ" template="host" propName="/Azure/Token/hostname"/>
+      <substitutionBindings xmi:id="_s6ks8Lw2EfCLi_04ouh_sQ" template="port" propName="/Azure/Token/port"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

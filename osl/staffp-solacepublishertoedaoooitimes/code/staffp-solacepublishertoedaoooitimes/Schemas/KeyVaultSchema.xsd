@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/KeyVaultSchema" xmlns:tns="http://www.example.org/KeyVaultSchema" elementFormDefault="qualified">
+
+    <element name="SecretPath" type="tns:SecretPath"></element>
+    
+    <complexType name="SecretPath">
+    	<sequence>
+    		<element name="Paths" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="AzSecret" type="tns:AzSecret"></element>
+    
+    <complexType name="AzSecret">
+    	<sequence>
+    		<element name="Secret" type="tns:Secret"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Secret">
+    	<sequence>
+    		<element name="Name" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Value" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+</schema>
